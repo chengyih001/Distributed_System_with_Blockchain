@@ -1,12 +1,8 @@
 package com.ece1724g2.userapiserver.controller;
 
 import com.ece1724g2.userapiserver.dto.ContractRequest;
-import com.ece1724g2.userapiserver.dto.SignInRequest;
-import com.ece1724g2.userapiserver.dto.SignUpRequest;
 import com.ece1724g2.userapiserver.entity.Contract;
 import com.ece1724g2.userapiserver.service.ContractService;
-import com.ece1724g2.userapiserver.service.SignInService;
-import com.ece1724g2.userapiserver.service.SignUpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/contract")
