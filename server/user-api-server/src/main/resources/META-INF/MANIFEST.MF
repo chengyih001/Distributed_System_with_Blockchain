@@ -1,3 +1,40 @@
 Manifest-Version: 1.0
 Main-Class: com.ece1724g2.userapiserver.UserApiServerApplication
+Class-Path: jakarta.xml.bind-api-4.0.1.jar okio-jvm-3.6.0.jar aspectjwea
+ ver-1.9.20.1.jar jackson-datatype-jdk8-2.15.3.jar kotlin-stdlib-jdk7-1.
+ 9.20.jar kotlin-stdlib-common-1.9.20.jar jakarta.inject-api-2.0.1.jar j
+ andex-3.1.2.jar google-api-client-1.23.0.jar jul-to-slf4j-2.0.9.jar mys
+ ql-connector-j-8.1.0.jar hibernate-core-6.3.1.Final.jar hibernate-commo
+ ns-annotations-6.0.6.Final.jar angus-activation-2.0.1.jar spring-data-j
+ pa-3.2.0.jar jackson-core-2.15.3.jar google-http-client-1.23.0.jar jaka
+ rta.persistence-api-3.1.0.jar log4j-api-2.21.1.jar spring-boot-starter-
+ web-3.2.0.jar spring-boot-starter-aop-3.2.0.jar spring-core-6.1.1.jar k
+ otlin-stdlib-1.9.20.jar spring-boot-starter-3.2.0.jar logback-classic-1
+ .4.11.jar spring-boot-3.2.0.jar jackson-module-parameter-names-2.15.3.j
+ ar jsr305-1.3.9.jar guava-jdk5-17.0.jar tyrus-standalone-client-1.9.jar
+  antlr4-runtime-4.10.1.jar spring-orm-6.1.1.jar slf4j-api-2.0.9.jar Hik
+ ariCP-5.0.1.jar spring-aop-6.1.1.jar tomcat-embed-core-10.1.16.jar ista
+ ck-commons-runtime-4.1.2.jar okio-3.6.0.jar spring-boot-devtools-3.2.0.
+ jar spring-tx-6.1.1.jar jackson-annotations-2.15.3.jar bcprov-jdk15on-1
+ .54.jar jackson-datatype-jsr310-2.15.3.jar spring-jdbc-6.1.1.jar spring
+ -data-commons-3.2.0.jar spring-aspects-6.1.1.jar jaxb-core-4.0.4.jar tx
+ w2-4.0.4.jar logback-core-1.4.11.jar commons-logging-1.1.1.jar log4j-to
+ -slf4j-2.21.1.jar spring-context-6.1.1.jar okhttp-4.12.0.jar google-oau
+ th-client-1.23.0.jar spring-boot-autoconfigure-3.2.0.jar lombok-1.18.30
+ .jar spring-security-web-6.2.0.jar annotations-13.0.jar classmate-1.6.0
+ .jar jaxb-runtime-4.0.4.jar spring-security-config-6.2.0.jar spring-boo
+ t-starter-logging-3.2.0.jar eddsa-0.2.0.jar spring-jcl-6.1.1.jar jakart
+ a.activation-api-2.1.2.jar spring-web-6.1.1.jar spring-webmvc-6.1.1.jar
+  bigchaindb-driver-1.0.jar httpclient-4.0.1.jar spring-boot-starter-tom
+ cat-3.2.0.jar spring-expression-6.1.1.jar spring-boot-starter-security-
+ 3.2.0.jar micrometer-commons-1.12.0.jar google-http-client-jackson2-1.2
+ 3.0.jar snakeyaml-2.2.jar spring-boot-starter-json-3.2.0.jar spring-boo
+ t-starter-jdbc-3.2.0.jar commons-codec-1.16.0.jar kotlin-stdlib-jdk8-1.
+ 9.20.jar tomcat-embed-el-10.1.16.jar httpcore-4.4.16.jar spring-securit
+ y-crypto-6.2.0.jar spring-boot-starter-data-jpa-3.2.0.jar gson-2.10.1.j
+ ar cryptoconditions-1.0.jar spring-security-core-6.2.0.jar jboss-loggin
+ g-3.5.3.Final.jar jackson-databind-2.15.3.jar byte-buddy-1.14.10.jar to
+ mcat-embed-websocket-10.1.16.jar spring-beans-6.1.1.jar micrometer-obse
+ rvation-1.12.0.jar jakarta.annotation-api-2.1.1.jar jakarta.transaction
+ -api-2.0.1.jar
 

@@ -1,7 +1,5 @@
-FROM anapsix/alpine-java
 
-
-
+FROM amazoncorretto:21.0.1-alpine3.18
 COPY out/ out/
 
 EXPOSE 8080
