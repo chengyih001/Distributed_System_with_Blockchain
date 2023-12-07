@@ -10,7 +10,6 @@ public class UserInfo {
 
     @Id
     private String user_id;
-    private String partner_id;
     private String name;
     private String email;
 
@@ -18,7 +17,6 @@ public class UserInfo {
 
     public UserInfo(String user_id, String name, String email) {
         this.user_id = user_id;
-        this.partner_id = "";
         this.name = name;
         this.email = email;
     }
@@ -28,9 +26,6 @@ public class UserInfo {
         return user_id;
     }
 
-    public String getPartner() {
-        return partner_id;
-    }
 
     public String getName() {
         return name;
@@ -45,9 +40,6 @@ public class UserInfo {
         this.user_id = id;
     }
 
-    public void setPartner(String partner) {
-        this.partner_id = partner;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -61,7 +53,6 @@ public class UserInfo {
     public String toString() {
         return "User{" +
                 "id=" + user_id + '\'' +
-                ", partner=" + partner_id + '\'' +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 '}';

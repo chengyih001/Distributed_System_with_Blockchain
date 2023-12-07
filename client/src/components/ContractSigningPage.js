@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 `;
 
 const ContractForm = styled.form`
@@ -41,49 +41,49 @@ const SubmitButton = styled.button`
 `;
 
 const ContractSigningPage = () => {
-    const [signature, setSignature] = useState('');
-    const [isSigned, setIsSigned] = useState(false);
+  const [signature, setSignature] = useState("");
+  const [isSigned, setIsSigned] = useState(false);
 
-    const handleSign = () => {
-        if (signature.trim() !== '') {
-            setIsSigned(true);
-        } else {
-            alert('Please enter yoru full name as the signature.');  
-        }
-    };
+  const handleSign = () => {
+    if (signature.trim() !== "") {
+      setIsSigned(true);
+    } else {
+      alert("Please enter yoru full name as the signature.");
+    }
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // TODO: Handle signed logic
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // TODO: Handle signed logic
+  };
 
-    return (
-        <Container>
-            <h1>Contract Signing</h1>
-            <ContractForm onSubmit={handleSubmit}>
-                {!isSigned ? (
-                    <>
-                        <SignatureInput
-                            type="text"
-                            placeholder="Enter your full name as the signature"
-                            value={signature}
-                            onChange={(e) => setSignature(e.target.value)}
-                        />
-                        <SignButton type="button" onClick={handleSign}>
-                            Sign Contract
-                        </SignButton>
-                    </>
-                ) : (
-                    <>
-                        <p>Contract signed successfully!</p>
-                        <SubmitButton type="submit" disabled={!isSigned}>
-                            Submit Contract
-                        </SubmitButton>
-                    </>
-                )}
-            </ContractForm>
-        </Container>
-    );
+  return (
+    <Container>
+      <h1>Contract Signing</h1>
+      <ContractForm onSubmit={handleSubmit}>
+        {!isSigned ? (
+          <>
+            <SignatureInput
+              type="text"
+              placeholder="Enter your full name as the signature"
+              value={signature}
+              onChange={(e) => setSignature(e.target.value)}
+            />
+            <SignButton type="button" onClick={handleSign}>
+              Sign Contract
+            </SignButton>
+          </>
+        ) : (
+          <>
+            <p>Contract signed successfully!</p>
+            <SubmitButton type="submit" disabled={!isSigned}>
+              Submit Contract
+            </SubmitButton>
+          </>
+        )}
+      </ContractForm>
+    </Container>
+  );
 };
 
 export default ContractSigningPage;

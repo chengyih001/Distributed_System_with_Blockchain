@@ -1,0 +1,19 @@
+docker pull mysql
+
+docker run -p 3306:3306 --name mysql_db  -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_DATABASE=app_user -e MYSQL_USER=temp_user -e MYSQL_PASSWORD=temp_pswd -e MYSQL_DATABASE=app_user -d mysql
+
+docker exec -i mysql_db sh -c 'exec mysql ' < user_db.sql 
+
+docker pull bigchaindb/bigchaindb:all-in-one
+
+docker run \
+  --detach \
+  --name bigchaindb \
+  --publish 9984:9984 \
+  --publish 9985:9985 \
+  --publish 27017:27017 \
+  --publish 26657:26657 \
+  --volume $HOME/bigchaindb_docker/mongodb/data/db:/data/db \
+  --volume $HOME/bigchaindb_docker/mongodb/data/configdb:/data/configdb \
+  --volume $HOME/bigchaindb_docker/tendermint:/tendermint \
+  bigchaindb/bigchaindb:all-in-one

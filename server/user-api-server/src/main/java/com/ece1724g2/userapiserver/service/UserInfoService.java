@@ -18,6 +18,12 @@ public class UserInfoService {
 
     @Transactional
     public UserInfo getUserInfoById(String user_id) {
+        if(user_id.isEmpty()) return null;
         return userInfoRepo.findById(user_id).get();
+    }
+    @Transactional
+    public UserInfo getUserInfoByEmail(String email) {
+        if(email.isEmpty()) return null;
+        return userInfoRepo.findByEmail(email).get();
     }
 }

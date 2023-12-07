@@ -11,6 +11,7 @@ import com.ece1724g2.userapiserver.service.UserInfoService;
 
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Optional;
 
 import com.ece1724g2.userapiserver.entity.UserInfo;
 
@@ -22,15 +23,15 @@ public class InfoController {
     private UserInfoService userInfoService;
 
     @GetMapping("/info")
-    public ResponseEntity<Map<String, Object>> getUserInfo(@RequestParam String user_id) {
-        System.out.println(user_id);
+    public ResponseEntity<Map<String, Object>> getUserInfo(@RequestParam Optional<String> email, @RequestParam Optional<String> user_id ) {
 
-        UserInfo userInfo = userInfoService.getUserInfoById(user_id);
-
+        UserInfo userInfo = userInfoService.getUserInfoByEmail(email.orElse(""));
+        if (userInfo == null) {
+            userInfo = userInfoService.getUserInfoById(user_id.orElse(""));
+        }
         if (userInfo != null) {
             Map<String, Object> response = new HashMap<>();
             response.put("user_id", userInfo.getId());
-            response.put("partner_id", userInfo.getPartner());
             response.put("name", userInfo.getName());
             response.put("email", userInfo.getEmail());
     
