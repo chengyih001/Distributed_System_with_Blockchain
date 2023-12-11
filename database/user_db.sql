@@ -1,12 +1,13 @@
--- Active: 1701466337098@@127.0.0.1@3306
+-- Active: 1701965587696@@app-user-db.culhgdelj9hf.us-east-1.rds.amazonaws.com@3306@app_user
 CREATE DATABASE IF NOT EXISTS app_user;
 
 USE app_user;
 
 CREATE TABLE IF NOT EXISTS user_info (
     user_id VARCHAR(36) PRIMARY KEY,
+    partner_id VARCHAR(36) NOT NULL,
     name CHAR(255) NOT NULL,
-    email CHAR(255) UNIQUE NOT NULL
+    email CHAR(255) UNIQUE NOT NULL,
 );
 
 CREATE TABLE IF NOT EXISTS user_auth (
